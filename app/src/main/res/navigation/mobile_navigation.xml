@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_busqueda">
 
     <fragment
         android:id="@+id/navigation_historial"
@@ -12,19 +12,19 @@
         tools:layout="@layout/fragment_historial" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_pendientes"
         android:name="pe.edu.pucp.proyecto.ui.pendientes.PendientesFragment"
         android:label="@string/title_pendientes"
         tools:layout="@layout/fragment_pendientes" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_recomendados"
         android:name="pe.edu.pucp.proyecto.ui.recomendados.RecomendadosFragment"
         android:label="@string/title_recomendados"
         tools:layout="@layout/fragment_recomendados" />
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_busqueda"
         android:name="pe.edu.pucp.proyecto.ui.busqueda.BusquedaFragment"
         android:label="@string/title_busqueda"
         tools:layout="@layout/fragment_busqueda" />
