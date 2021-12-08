@@ -1,21 +1,21 @@
 package pe.edu.pucp.proyecto
 
 class Resenia (usuario: Usuario, libro: Libro, comentario: String) {
-    private var usuario : Usuario = Usuario("","")
+     var usuario : Usuario = Usuario("","")
         get(){
             return field
         }
         set(value){
             field = value
         }
-    private var libro : Libro = Libro("","","", "")
+     var libro : Libro = Libro("","","", "")
         get(){
             return field
         }
         set(value){
             field = value
         }
-    private var comentario : String = ""
+     var comentario : String = ""
         get(){
             return field
         }

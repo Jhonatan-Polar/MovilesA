@@ -1,28 +1,28 @@
 package pe.edu.pucp.proyecto
 
-class Libro (titulo: String, autor: String, descripcion : String, categoria: String) {
-    private var titulo : String = ""
+open class Libro (titulo: String, autor: String, descripcion : String, categoria: String) {
+     var titulo : String = ""
         get(){
             return field
         }
         set(value){
             field = if (value.isEmpty()) "" else value
         }
-    private var autor : String = ""
+     var autor : String = ""
         get(){
             return field
         }
         set(value){
             field = if (value.isEmpty()) "" else value
         }
-    private var descripcion : String = ""
+     var descripcion : String = ""
         get(){
             return field
         }
         set(value){
             field = if (value.isEmpty()) "" else value
         }
-    private var categoria : String = ""
+     var categoria : String = ""
         get(){
             return field
         }
@@ -30,7 +30,7 @@ class Libro (titulo: String, autor: String, descripcion : String, categoria: Str
             field = if (value.isEmpty()) "" else value
         }
 
-    private var resenias = mutableListOf<Resenia>()
+     var resenias = mutableListOf<Resenia>()
 
     init {
         this.titulo = titulo

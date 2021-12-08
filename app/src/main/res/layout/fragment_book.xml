@@ -10,7 +10,7 @@
         android:layout_width="176dp"
         android:layout_height="48dp"
         android:layout_marginStart="216dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="208dp"
         android:text="@string/btnEscribeResenia"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:layout_width="131dp"
         android:layout_height="79dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="68dp"
         android:contentDescription="@string/imgbook"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:text="@string/txtDescripcion"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,12 +55,12 @@
         android:id="@+id/txtCategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="68dp"
         android:text="@string/txtCategoria"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -80,7 +80,7 @@
         android:id="@+id/txtAutor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
+        android:layout_marginStart="156dp"
         android:text="@string/txtAutor"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,8 +90,8 @@
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
         android:text="@string/txtTitulo"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,8 +101,8 @@
         android:id="@+id/vtitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
         android:text="@string/txtDefault"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -111,17 +111,17 @@
         android:id="@+id/vcategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="68dp"
         android:text="@string/txtDefault"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vtitulo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/vautor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
+        android:layout_marginStart="236dp"
         android:text="@string/txtDefault"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vcategoria" />
@@ -133,6 +133,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="2dp"
         android:text="@string/txtDefault"
+        android:maxWidth = "350sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
 
