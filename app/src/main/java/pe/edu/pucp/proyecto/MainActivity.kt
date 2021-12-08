@@ -3,28 +3,42 @@ package pe.edu.pucp.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import pe.edu.pucp.proyecto.databinding.FragmentBookBinding
 import pe.edu.pucp.proyecto.databinding.ActivityMainBinding
+
 
 var usuarios = mutableListOf<Usuario>()
 var libros = mutableListOf<Libro>()
 
+
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FragmentBookBinding
     private var REQUEST_CODE = 1234
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FragmentBookBinding.inflate(layoutInflater)
         setContentView(binding.root)
         // Crear usuarios y libros
         crearUsuariosLibrosyResenias()
 
         // Iniciar Sesión
-        binding.btnIniciarSesion.setOnClickListener {
+        //binding.btnIniciarSesion.setOnClickListener {
             // Si el usuario y contraseña son correctos:
-            iniciarSesion()
-        }
+        //    iniciarSesion()
+        //}
+
+        //Ejemplo:: Llenar datos del libro(depende de la vista busqueda para llenar por el id de la lista)
+        binding.vtitulo.setText(libros.get(0).titulo)
+        binding.vcategoria.setText(libros.get(0).categoria)
+        binding.vautor.setText(libros.get(0).autor)
+        binding.vdescripcion.setText(libros.get(0).descripcion)
+
+        binding.vusuario.setText(libros.get(0).resenias.get(0).usuario.nombre)
+        binding.vrol.setText(libros.get(0).resenias.get(0).usuario.rol)
+        binding.vcomentario.setText(libros.get(0).resenias.get(0).comentario)
     }
 
     private fun iniciarSesion(){
@@ -39,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         usuarios.add(Usuario("Leandro Lazo"  ,"Docente"))
 
         libros.add(Libro("Cálculo en Varias Variables (8.ª ed.)",
-            "James Stewart","","Matemática"))
+            "James Stewart","Este texto contiene los temas necesarios para que los estudiantes entiendan las ideas fundamentales, sustentándolas en aplicaciones del mundo real y construyan habilidades de razonamiento matemático.","Matemática"))
         libros.add(Libro("Física Universitaria Vol. I",
             "Francis W. Sears","","Física"))
         libros.add(Libro("Química (primera edición)",
