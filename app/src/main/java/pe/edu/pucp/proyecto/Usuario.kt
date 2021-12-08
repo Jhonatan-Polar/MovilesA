@@ -15,6 +15,7 @@ class Usuario (nombre: String, rol: String) {
         set(value){
             field = if (value.isEmpty()) "" else value
         }
+    private var contrasenia : String = "password"
 
     private var resenias = mutableListOf<Resenia>()
 

@@ -1,5 +1,6 @@
 package pe.edu.pucp.proyecto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import pe.edu.pucp.proyecto.databinding.ActivityMainBinding
@@ -10,6 +11,7 @@ var libros = mutableListOf<Libro>()
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private var REQUEST_CODE = 1234
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +20,16 @@ class MainActivity : AppCompatActivity() {
         // Crear usuarios y libros
         crearUsuariosLibrosyResenias()
 
+        // Iniciar Sesión
+        binding.btnIniciarSesion.setOnClickListener {
+            // Si el usuario y contraseña son correctos:
+            iniciarSesion()
+        }
+    }
+
+    private fun iniciarSesion(){
+        val inciarSesionIntent = Intent(this,BottomNavigation::class.java)
+        startActivityForResult(inciarSesionIntent,REQUEST_CODE)
     }
 
     private fun crearUsuariosLibrosyResenias(){

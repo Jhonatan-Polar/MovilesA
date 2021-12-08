@@ -5,4 +5,5 @@
     <string name="title_pendientes">Pendientes</string>
     <string name="title_recomendados">Recomendados</string>
     <string name="title_busqueda">Búsqueda</string>
+    <string name="btnIniciarSesion">Iniciar Sesión</string>
 </resources>
