@@ -84,7 +84,7 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 .idea/.name
-
+.idea/misc.xml
 app/gradlew
 app/gradlew.bat
 app/gradle/

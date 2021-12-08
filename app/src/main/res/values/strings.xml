@@ -6,4 +6,11 @@
     <string name="title_recomendados">Recomendados</string>
     <string name="title_busqueda">Búsqueda</string>
     <string name="btnIniciarSesion">Iniciar Sesión</string>
+    <string name="btnEscribeResenia">Escribe tu reseña</string>
+    <string name="imgbook">imgbook</string>
+    <string name="txtDescripcion">Descripción:</string>
+    <string name="txtReseñas">Reseñas:</string>
+    <string name="txtCategoria">Categoria:</string>
+    <string name="txtAutor">Autor:</string>
+    <string name="txtTitulo">Título:</string>
 </resources>
