@@ -83,3 +83,8 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+.idea/.name
+
+app/grandlew
+app/grandlew.bat
+app/grandle/
