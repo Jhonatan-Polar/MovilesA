@@ -31,7 +31,7 @@ class BusquedaFragment : Fragment() {
         _binding = FragmentBusquedaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = binding.textBusqueda
         busquedaViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
