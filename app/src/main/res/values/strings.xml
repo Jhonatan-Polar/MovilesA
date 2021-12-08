@@ -13,4 +13,5 @@
     <string name="txtCategoria">Categoria:</string>
     <string name="txtAutor">Autor:</string>
     <string name="txtTitulo">Título:</string>
+    <string name="txtDefault">null</string>
 </resources>
