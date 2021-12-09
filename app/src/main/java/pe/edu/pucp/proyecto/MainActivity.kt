@@ -3,7 +3,6 @@ package pe.edu.pucp.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import pe.edu.pucp.proyecto.databinding.FragmentBookBinding
 import pe.edu.pucp.proyecto.databinding.ActivityMainBinding
 
 
@@ -13,32 +12,23 @@ var libros = mutableListOf<Libro>()
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: FragmentBookBinding
+    private lateinit var binding: ActivityMainBinding
     private var REQUEST_CODE = 1234
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = FragmentBookBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         // Crear usuarios y libros
         crearUsuariosLibrosyResenias()
 
         // Iniciar Sesión
-        //binding.btnIniciarSesion.setOnClickListener {
+        binding.btnIniciarSesion.setOnClickListener {
             // Si el usuario y contraseña son correctos:
-        //    iniciarSesion()
-        //}
+            iniciarSesion()
+        }
 
-        //Ejemplo:: Llenar datos del libro(depende de la vista busqueda para llenar por el id de la lista)
-        binding.vtitulo.setText(libros.get(0).titulo)
-        binding.vcategoria.setText(libros.get(0).categoria)
-        binding.vautor.setText(libros.get(0).autor)
-        binding.vdescripcion.setText(libros.get(0).descripcion)
-
-        binding.vusuario.setText(libros.get(0).resenias.get(0).usuario.nombre)
-        binding.vrol.setText(libros.get(0).resenias.get(0).usuario.rol)
-        binding.vcomentario.setText(libros.get(0).resenias.get(0).comentario)
     }
 
     private fun iniciarSesion(){
