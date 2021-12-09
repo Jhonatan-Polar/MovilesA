@@ -3,6 +3,7 @@ package pe.edu.pucp.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import pe.edu.pucp.proyecto.databinding.FragmentBookBinding
 import pe.edu.pucp.proyecto.databinding.ActivityMainBinding
 
@@ -39,11 +40,48 @@ class MainActivity : AppCompatActivity() {
         binding.vusuario.setText(libros.get(0).resenias.get(0).usuario.nombre)
         binding.vrol.setText(libros.get(0).resenias.get(0).usuario.rol)
         binding.vcomentario.setText(libros.get(0).resenias.get(0).comentario)
+
+        binding.btnEscribe.setOnClickListener{addRev()}
     }
 
     private fun iniciarSesion(){
         val inciarSesionIntent = Intent(this,BottomNavigation::class.java)
         startActivityForResult(inciarSesionIntent,REQUEST_CODE)
+    }
+
+    private fun addRev(){
+        binding.btnEscribe.setVisibility(View.INVISIBLE);
+        binding.vdescripcion.setVisibility(View.INVISIBLE);
+        binding.txtDescripcion.setVisibility(View.INVISIBLE);
+        binding.btnEscribe.setVisibility(View.INVISIBLE);
+        binding.txtResenia.setVisibility(View.INVISIBLE);
+        binding.txtResenia.setVisibility(View.INVISIBLE);
+        binding.vusuario.setVisibility(View.INVISIBLE);
+        binding.vrol.setVisibility(View.INVISIBLE);
+        binding.vcomentario.setVisibility(View.INVISIBLE);
+        binding.reseLabel.setVisibility(View.VISIBLE);
+        binding.nuevaRese.setVisibility(View.VISIBLE);
+        binding.btnGuardar.setVisibility(View.VISIBLE);
+
+        binding.btnGuardar.setOnClickListener{
+            binding.nuevaRese.text;
+            //libros[0].agregarResenia(libros.get(0).resenias.get(0).usuario,libros.get(0),binding.nuevaRese.text.toString())
+            binding.vusuario.setText(libros.get(0).resenias.get(0).usuario.nombre);
+            binding.vrol.setText(libros.get(0).resenias.get(0).usuario.rol);
+            binding.vcomentario.setText(binding.nuevaRese.text);
+            binding.btnEscribe.setVisibility(View.VISIBLE);
+            binding.vdescripcion.setVisibility(View.VISIBLE);
+            binding.txtDescripcion.setVisibility(View.VISIBLE);
+            binding.btnEscribe.setVisibility(View.VISIBLE);
+            binding.txtResenia.setVisibility(View.VISIBLE);
+            binding.txtResenia.setVisibility(View.VISIBLE);
+            binding.vusuario.setVisibility(View.VISIBLE);
+            binding.vrol.setVisibility(View.VISIBLE);
+            binding.vcomentario.setVisibility(View.VISIBLE);
+            binding.reseLabel.setVisibility(View.INVISIBLE);
+            binding.nuevaRese.setVisibility(View.INVISIBLE);
+            binding.btnGuardar.setVisibility(View.INVISIBLE);
+        }
     }
 
     private fun crearUsuariosLibrosyResenias(){
