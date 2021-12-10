@@ -52,9 +52,9 @@ class BusquedaFragment : Fragment() {
 
 
         /*
-        val textView: TextView = binding.textBusqueda
+        val txtNombreUsuario: TextView = binding.textBusqueda
         busquedaViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
+            txtNombreUsuario.text = it
         })
          */
 

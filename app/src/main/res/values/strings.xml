@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Proyecto</string>
+    <string name="app_name">Panqa PUCP</string>
     <string name="title_activity_bottom_navigation">BottomNavigation</string>
     <string name="title_historial">Historial</string>
     <string name="title_pendientes">Pendientes</string>
@@ -16,4 +16,7 @@
     <string name="txtDefault">null</string>
     <string name="txtBuscar">Encuentra el libro que buscas:</string>
     <string name="btnBuscar">BUSCAR</string>
+    <string name="txtNombreUsuario">Nombre de usuario</string>
+    <string name="txtContrasenia">Contraseña</string>
+    <string name="txtIniciarSesion">¡Bienvenido a Panqa PUCP!</string>
 </resources>
