@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/iv_Libro"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:scaleType="centerCrop"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvNombreLibro"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:paddingTop="4sp"
+        android:paddingBottom="12sp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>

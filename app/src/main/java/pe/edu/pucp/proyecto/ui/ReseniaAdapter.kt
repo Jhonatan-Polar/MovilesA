@@ -17,7 +17,7 @@ class ReseniaAdapter(context: Context, resource: Int, objects: MutableList<Resen
 
         var convertView = convertViewAux
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.layout_list_resenia, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.layout_list_resenia, parent, false)
         }
 
         val tvNombre = convertView!!.findViewById(pe.edu.pucp.proyecto.R.id.tvNombre) as TextView

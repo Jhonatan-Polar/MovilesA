@@ -29,6 +29,13 @@ open class Libro (titulo: String, autor: String, descripcion : String, categoria
         set(value){
             field = if (value.isEmpty()) "" else value
         }
+     var imagen : Int = R.drawable.libro
+        get(){
+            return field
+        }
+        set(value){
+            field = if (value <= 0) R.drawable.libro else value
+        }
 
      var resenias = mutableListOf<Resenia>()
 

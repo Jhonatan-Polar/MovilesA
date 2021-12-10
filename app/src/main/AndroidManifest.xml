@@ -11,14 +11,17 @@
         android:theme="@style/Theme.Proyecto">
         <activity
             android:name=".ui.LibroActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".BottomNavigation"
             android:exported="false"
-            android:label="@string/title_activity_bottom_navigation" />
+            android:label="@string/title_activity_bottom_navigation"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
