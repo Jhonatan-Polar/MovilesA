@@ -7,11 +7,6 @@
         android:title="@string/title_historial" />
 
     <item
-        android:id="@+id/navigation_pendientes"
-        android:icon="@drawable/ic_baseline_new_releases_24"
-        android:title="@string/title_pendientes" />
-
-    <item
         android:id="@+id/navigation_recomendados"
         android:icon="@drawable/ic_baseline_menu_book_24"
         android:title="@string/title_recomendados" />
@@ -20,5 +15,10 @@
         android:id="@+id/navigation_busqueda"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="@string/title_busqueda" />
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/title_perfil" />
 
 </menu>

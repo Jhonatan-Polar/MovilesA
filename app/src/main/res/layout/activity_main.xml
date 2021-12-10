@@ -10,7 +10,7 @@
         android:id="@+id/imageFilterView"
         android:layout_width="118dp"
         android:layout_height="84dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +19,8 @@
 
     <TextView
         android:id="@+id/txtIniciarSesion"
-        android:layout_width="158dp"
-        android:layout_height="168dp"
+        android:layout_width="157dp"
+        android:layout_height="191dp"
         android:layout_marginTop="36dp"
         android:text="@string/txtIniciarSesion"
         android:textAlignment="center"
@@ -44,22 +44,7 @@
         app:layout_constraintVertical_bias="0.884" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="253dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="32dp"
-        android:ems="10"
-        android:hint="@string/txtNombreUsuario"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIniciarSesion" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:layout_marginBottom="215dp"
@@ -68,7 +53,36 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/editTextUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/txtNombreUsuario"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIniciarSesion" />
+
+    <TextView
+        android:id="@+id/txtErrorLogin"
+        android:layout_width="254dp"
+        android:layout_height="26dp"
+        android:text="@string/txtErrorLogin"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIniciarSesion"
+        app:layout_constraintEnd_toEndOf="@+id/txtIniciarSesion"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/txtIniciarSesion"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterView"
+        app:layout_constraintVertical_bias="0.696" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

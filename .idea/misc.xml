@@ -11,6 +11,7 @@
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.1" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/drawable/ic_baseline_local_library_24.xml" value="0.1" />
+        <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.1175925925925926" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/drawable/ic_baseline_new_releases_24.xml" value="0.1" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.1" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
@@ -28,8 +29,9 @@
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/layout/fragment_historial.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/layout/fragment_libro.xml" value="0.1" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/layout/fragment_pendientes.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/layout/fragment_perfil.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/layout/fragment_recomendados.xml" value="0.17916666666666667" />
-        <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11" />
+        <entry key="..\:/Users/Gustavo Rojas/Desktop/Proyecto-MovilesA/MovilesA/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

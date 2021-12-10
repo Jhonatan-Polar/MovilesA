@@ -5,6 +5,7 @@
     <string name="title_pendientes">Pendientes</string>
     <string name="title_recomendados">Recomendados</string>
     <string name="title_busqueda">Búsqueda</string>
+    <string name="title_perfil">Mi Perfil</string>
     <string name="btnIniciarSesion">Iniciar Sesión</string>
     <string name="btnEscribeResenia">Escribe tu reseña</string>
     <string name="imgbook">imgbook</string>
@@ -19,4 +20,6 @@
     <string name="txtNombreUsuario">Nombre de usuario</string>
     <string name="txtContrasenia">Contraseña</string>
     <string name="txtIniciarSesion">¡Bienvenido a Panqa PUCP!</string>
+    <string name="txtErrorLogin">Usuario o contraseña incorrecta</string>
+    <string name="btnCerrarSesion">Cerrar Sesión</string>
 </resources>

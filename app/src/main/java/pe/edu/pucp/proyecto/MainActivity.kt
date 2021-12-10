@@ -3,12 +3,13 @@ package pe.edu.pucp.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import pe.edu.pucp.proyecto.databinding.ActivityMainBinding
 
 
 var usuarios = mutableListOf<Usuario>()
 var libros = mutableListOf<Libro>()
-
+var usuarioActual = Usuario("","")
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,13 +21,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.txtErrorLogin.visibility = TextView.INVISIBLE;
+        binding.editTextUsername.requestFocus()
+
         // Crear usuarios y libros
         crearUsuariosLibrosyResenias()
 
         // Iniciar Sesión
         binding.btnIniciarSesion.setOnClickListener {
-            // Si el usuario y contraseña son correctos:
-            iniciarSesion()
+            val nombreUsuario = binding.editTextUsername.text.toString()
+            val contrasenia = binding.editTextPassword.text.toString()
+            if(loginValido(nombreUsuario, contrasenia)) {
+                binding.txtErrorLogin.visibility = TextView.INVISIBLE;
+                iniciarSesion()
+            }
+            else{
+                binding.txtErrorLogin.visibility = TextView.VISIBLE;
+            }
         }
 
     }
@@ -37,7 +49,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun crearUsuariosLibrosyResenias(){
-        usuarios.add(Usuario("Gustavo Rojas" ,"Estudiante"))
+        usuarios.add(Usuario("Pablo José Antonio Gálvez Rodríguez" ,"Estudiante", "pablo123"))
+        usuarios.add(Usuario("José Luis Vargas García" ,"Estudiante", "jluisv"))
         usuarios.add(Usuario("Emerson Muñoz" ,"Docente"))
         usuarios.add(Usuario("Jhonatan Cueva","Estudiante"))
         usuarios.add(Usuario("Leandro Lazo"  ,"Docente"))
@@ -75,5 +88,14 @@ class MainActivity : AppCompatActivity() {
             "Muy buen libro para Fa1 y Fa2. ¡Definitivamente lo recomiendo!")
         libros[1].agregarResenia(usuarios[2],libros[1],
             "Los ejemplos del libro ayudan a entender mucho los temas de Física.")
+    }
+
+    private fun loginValido(username : String, password : String) : Boolean {
+        val foundUser = usuarios.find { u -> u.nombreUsuario == username }
+        if (foundUser != null && foundUser.contrasenia == password){
+            usuarioActual = foundUser
+            return true
+        }
+        return false
     }
 }

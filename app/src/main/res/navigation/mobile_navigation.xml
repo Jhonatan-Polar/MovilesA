@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_historial" />
 
     <fragment
-        android:id="@+id/navigation_pendientes"
-        android:name="pe.edu.pucp.proyecto.ui.pendientes.PendientesFragment"
-        android:label="@string/title_pendientes"
-        tools:layout="@layout/fragment_pendientes" />
-
-    <fragment
         android:id="@+id/navigation_recomendados"
         android:name="pe.edu.pucp.proyecto.ui.recomendados.RecomendadosFragment"
         android:label="@string/title_recomendados"
@@ -28,4 +22,10 @@
         android:name="pe.edu.pucp.proyecto.ui.busqueda.BusquedaFragment"
         android:label="@string/title_busqueda"
         tools:layout="@layout/fragment_busqueda" />
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="pe.edu.pucp.proyecto.ui.perfil.PerfilFragment"
+        android:label="@string/title_perfil"
+        tools:layout="@layout/fragment_perfil" />
 </navigation>

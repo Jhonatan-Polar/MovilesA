@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.ActionBar
 import androidx.navigation.findNavController
 import pe.edu.pucp.proyecto.R
@@ -23,7 +24,7 @@ class LibroActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val actionBar: ActionBar? = supportActionBar
-        // showing the back button in action bar
+        // showing the back btnCerrarSesion in action bar
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
 
@@ -42,6 +43,7 @@ class LibroActivity : AppCompatActivity() {
     }
 
     private fun llenarDatosDelLibro() {
+        binding.btnEscribe.visibility = Button.VISIBLE
         binding.vtitulo.setText(libroSeleccionadoAMostrar.titulo)
         binding.vcategoria.setText(libroSeleccionadoAMostrar.categoria)
         binding.vautor.setText(libroSeleccionadoAMostrar.autor)
