@@ -109,7 +109,7 @@ class LibroActivity : AppCompatActivity() {
             binding.nuevaRese.setVisibility(View.INVISIBLE)
             binding.btnGuardar.setVisibility(View.INVISIBLE)
 
-            llenarDatosPrincipalesDelLibro()
+            llenarDatosDelLibro()
             evaluarSiYaEscribioResenia()
         }
     }

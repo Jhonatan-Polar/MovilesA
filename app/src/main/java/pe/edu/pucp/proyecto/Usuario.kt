@@ -37,6 +37,8 @@ class Usuario (nombre: String, rol: String, nombreUsuario : String = "") {
     }
 
     fun agregarLibroAHistorial(libro : Libro){
-        historial.add(libro)
+        if(!historial.contains(libro)) {
+            historial.add(0, libro)
+        }
     }
 }
