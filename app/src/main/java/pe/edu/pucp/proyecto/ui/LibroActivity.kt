@@ -38,7 +38,6 @@ class LibroActivity : AppCompatActivity() {
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
         //Ejemplo:: Llenar datos del libro(depende de la vista busqueda para llenar por el id de la lista)
-        libroSeleccionado = libros.get(0)
         llenarDatosDelLibro()
 
         evaluarSiYaEscribioResenia()

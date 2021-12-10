@@ -15,11 +15,12 @@
     <string name="txtAutor">Autor:</string>
     <string name="txtTitulo">Título:</string>
     <string name="txtDefault">null</string>
-    <string name="txtBuscar">Encuentra el libro que buscas:</string>
+    <string name="txtBuscar">Escribe título, autor o categoría:</string>
     <string name="btnBuscar">BUSCAR</string>
     <string name="txtNombreUsuario">Nombre de usuario</string>
     <string name="txtContrasenia">Contraseña</string>
     <string name="txtIniciarSesion">¡Bienvenido a Panqa PUCP!</string>
     <string name="txtErrorLogin">Usuario o contraseña incorrecta</string>
     <string name="btnCerrarSesion">Cerrar Sesión</string>
+    <string name="txtNoResults">No se encontraron resultados para la búsqueda</string>
 </resources>
