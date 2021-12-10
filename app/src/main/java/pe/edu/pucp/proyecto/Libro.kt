@@ -20,7 +20,7 @@ open class Libro (titulo: String, autor: String, descripcion : String, categoria
             return field
         }
         set(value){
-            field = if (value.isEmpty()) "" else value
+            field = if (value.isEmpty()) "" else (if (value.length > 235) (value.substring(0,235) + "...") else value)
         }
      var categoria : String = ""
         get(){
@@ -39,7 +39,7 @@ open class Libro (titulo: String, autor: String, descripcion : String, categoria
         this.categoria = categoria
     }
 
-    public fun agregarResenia(usuario: Usuario, libro: Libro, comentario: String){
-        resenias.add(Resenia(usuario,libro,comentario))
+    public fun agregarResenia(usuario: Usuario, comentario: String){
+        resenias.add(Resenia(usuario,this,comentario))
     }
 }

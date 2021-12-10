@@ -37,6 +37,7 @@ class PerfilFragment : Fragment() {
         val root: View = binding.root
 
         binding.txtNombrePerfil.text = usuarioActual.nombre
+        binding.txtRolPerfil.text = usuarioActual.rol
 
         binding.btnCerrarSesion.setOnClickListener {
             val cerrarSesionIntent = Intent(activity, MainActivity::class.java)

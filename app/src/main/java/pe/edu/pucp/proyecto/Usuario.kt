@@ -25,10 +25,18 @@ class Usuario (nombre: String, rol: String, nombreUsuario : String = "") {
         }
 
     var resenias = mutableListOf<Resenia>()
+    var historial = mutableListOf<Libro>()
+        get(){
+            return field
+        }
 
     init {
         this.nombre = nombre
         this.rol = rol
         this.nombreUsuario = nombreUsuario
+    }
+
+    fun agregarLibroAHistorial(libro : Libro){
+        historial.add(libro)
     }
 }

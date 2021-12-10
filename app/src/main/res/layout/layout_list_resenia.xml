@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvNombre"
+        android:paddingTop="8sp"
+        android:paddingBottom="2sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7sp"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvRol"
+        android:paddingTop="2sp"
+        android:paddingBottom="2sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7sp"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/tvComentario"
+        android:paddingTop="2sp"
+        android:paddingBottom="8sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7sp"
+        android:textSize="12sp" />
+</LinearLayout>

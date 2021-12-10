@@ -72,21 +72,19 @@ class MainActivity : AppCompatActivity() {
         libros.add(Libro("Estructura de datos y métodos algorítmicos",
             "Narciso Martí Oliet","","Informática"))
 
-        libros[0].agregarResenia(usuarios[0],libros[0],
-            "¡Excelente libro! Tiene buenos ejercicios para Cálculo 3.")
-        libros[0].agregarResenia(usuarios[1],libros[0],
-            "Este libro me ayudó a pasar Cal3.")
-        libros[0].agregarResenia(usuarios[2],libros[0],
+        libros[0].agregarResenia(usuarios[0],
+            "¡Excelente libro! Tiene buenos ejercicios para Cálculo 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+        libros[0].agregarResenia(usuarios[2],
             "Muy buen libro para Cálculo en Varias Variables.")
-        libros[7].agregarResenia(usuarios[3],libros[7],
+        libros[7].agregarResenia(usuarios[3],
             "Este libro tiene buenos ejemplos para EDPM.")
-        libros[7].agregarResenia(usuarios[0],libros[7],
+        libros[7].agregarResenia(usuarios[0],
             "Te explica bien la teoría para EDPM.")
-        libros[5].agregarResenia(usuarios[1],libros[5],
+        libros[5].agregarResenia(usuarios[1],
             "¡Todo lo que se necesita para LP1 está aquí!")
-        libros[1].agregarResenia(usuarios[1],libros[1],
+        libros[1].agregarResenia(usuarios[1],
             "Muy buen libro para Fa1 y Fa2. ¡Definitivamente lo recomiendo!")
-        libros[1].agregarResenia(usuarios[2],libros[1],
+        libros[1].agregarResenia(usuarios[2],
             "Los ejemplos del libro ayudan a entender mucho los temas de Física.")
     }
 
