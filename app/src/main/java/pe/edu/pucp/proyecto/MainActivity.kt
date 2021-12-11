@@ -49,11 +49,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun crearUsuariosLibrosyResenias(){
-        usuarios.add(Usuario("Pablo José Antonio Gálvez Rodríguez" ,"Estudiante", "pablo123"))
-        usuarios.add(Usuario("José Luis Vargas García" ,"Estudiante", "jluisv"))
+        usuarios.add(Usuario("Pablo José Antonio Gálvez Rodríguez" ,"Estudiante", "pablogalvez"))
+        usuarios.add(Usuario("José Luis Vargas García" ,"Estudiante", "josevargas"))
         usuarios.add(Usuario("Emerson Muñoz" ,"Docente","emersonmunoz"))
-        usuarios.add(Usuario("Jhonatan Cueva","Estudiante","jhonatancueva"))
-        usuarios.add(Usuario("Leandro Lazo"  ,"Docente","leandrolazo"))
+        usuarios.add(Usuario("Jhonatan Cueva","Docente","jhonatancueva"))
+        usuarios.add(Usuario("Leandro Lazo"  ,"Estudiante","leandrolazo"))
         usuarios.add(Usuario("Gustavo Rojas" ,"Estudiante","gustavorojas"))
 
         libros.add(Libro("Cálculo en Varias Variables (8.ª ed.)",
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         libros[0].agregarResenia(usuarios[2],
             "Muy buen libro para Cálculo en Varias Variables.")
         libros[7].agregarResenia(usuarios[3],
-            "Este libro tiene buenos ejemplos para EDPM.")
+            "Este libro tiene buenos ejemplos para el curso de EDPM.")
         libros[7].agregarResenia(usuarios[0],
             "Te explica bien la teoría para EDPM.")
         libros[5].agregarResenia(usuarios[1],
