@@ -59,12 +59,7 @@ class BusquedaFragment : Fragment() {
         val root: View = binding.root
 
         binding.txtNoResults.visibility = TextView.INVISIBLE
-        /*
-        val txtNombreUsuario: TextView = binding.textBusqueda
-        busquedaViewModel.text.observe(viewLifecycleOwner, Observer {
-            txtNombreUsuario.text = it
-        })
-         */
+
 
         var textoABuscar : String = ""
         binding.searchView.setOnQueryTextListener(object : OnQueryTextListener {
@@ -127,15 +122,6 @@ class BusquedaFragment : Fragment() {
     }
 
     fun mostrarLibro(){
-        //binding.btnBuscar.visibility = Button.INVISIBLE
-        //binding.searchView.visibility = SearchView.INVISIBLE
-        //binding.txtBuscar.visibility = TextView.INVISIBLE
-
-        //val transaction = activity?.supportFragmentManager?.beginTransaction()
-        //transaction?.replace(R.id.content, LibroFragment())
-        //transaction?.disallowAddToBackStack()
-        //transaction?.commit()
-
         val verLibroIntent = Intent(activity,LibroActivity::class.java)
         startActivityForResult(verLibroIntent,REQUEST_CODE)
     }
